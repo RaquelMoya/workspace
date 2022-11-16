@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de acceso</title>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form class="form" id="form">
+        <div id="nombre"class="form__control">
+          <label>Nombre</label>
+          <input
+            type="text"
+            placeholder="Introduzca su nombre"
+            id="userName"
+          />
+          <img src="images/success-icon.svg" class="check-circle">
+          <img src="images/error-icon.svg" class="exclamation-circle">
+          <small>Error message</small>
+        </div>
+        <div class="form__control" id="correo">
+          <label>Email</label>
+          <input type="email" placeholder="hola@ejemplo.com" id="email" />
+          <img src="images/success-icon.svg" class="check-circle">
+          <img src="images/error-icon.svg" class="exclamation-circle">
+          <small>Error message</small>
+        </div>
+        <div class="form__control" id="clave">
+          <label>Clave</label>
+          <input type="password" placeholder="Introduzca su clave" id="password" />
+          <img src="images/success-icon.svg" class="check-circle">
+          <img src="images/error-icon.svg" class="exclamation-circle">
+          <small>Error message</small>
+        </div>
+        <div class="form__control" id="clave2">
+          <label>Confirme su clave</label>
+          <input
+            type="password"
+            placeholder="Confirme su clave"
+            id="confirmPassword"
+          />
+          <img src="images/success-icon.svg" class="check-circle">
+          <img src="images/error-icon.svg" class="exclamation-circle">
+          <small>Error message</small>
+        </div>
+        <button onclick="checkSubmit()">Enviar</button>
+      </form>
+    </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
